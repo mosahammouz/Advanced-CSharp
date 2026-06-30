@@ -12,12 +12,18 @@ class Program
     {
         Person nick = new Person("mousa's nick", new DateOnly(2004,10,1));
         Person nick2 = new Person("mousa's nick", new DateOnly(2000,1,1));
+        var e = new Employee("Jorsh",new DateOnly(2004,10,1));
+        var newE = e with { LastName = "Hammouz"};
         Console.WriteLine(nick == nick2);
 
         var leg = nick with { DateOfBirth = new DateOnly(2000,1,1) };
         Console.WriteLine(leg);
         Console.WriteLine(leg == nick2 );
-        
+        Console.WriteLine(newE);
+        var order1 = new Order(12218848, "Mousa Hammouz", 900);
+        var order2 = new Order(12218848, "Mousa Hammouz", 900);
+        Console.WriteLine(order1 == order2); 
+       
 
         /*  Console.WriteLine("Hello, World!");
           Action<string, int> D = Test;  // D is a ref. on Test() ,, so u can treat D as a Test like a nickname man :))
