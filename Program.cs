@@ -10,32 +10,41 @@ class Program
 
     static void Main()
     {
-      /*  Console.WriteLine("Hello, World!");
-        Action<string, int> D = Test;  // D is a ref. on Test() ,, so u can treat D as a Test like a nickname man :))
-        D("Mousa", 22);
-        Download(ShowProgress);
-        Do(Squared);
-        NamesWithO(WithOs);
+        Person nick = new Person("mousa's nick", new DateOnly(2004,10,1));
+        Person nick2 = new Person("mousa's nick", new DateOnly(2000,1,1));
+        Console.WriteLine(nick == nick2);
 
-        Account a = new Account();
-        List<int> data = new() { 1, 6, 3, 5 };
-       a.Sort(data,l=>l.OrderBy(item=>item).ToList());// (list , operation )
-       
-       Func<int, int> triple = x => x * x * x;
-       Func<int,int> doubled = x => x * x;
-       Func<string,string> capitalize = str => str.ToUpper();
-       Console.WriteLine(Doo(triple));
-       Console.WriteLine(Foo(capitalize));*/
-      Stock s = new Stock();
-      s.AddKV("FR",222);
-      s.AddKV("Mousa",900);
-      s.CancelAnItem("AAPL");
-      s.ListItems();
-      s.EditK("Mousa","Ahmad");
-      s.ListItems();
-      s.Search("FR");
-      Console.WriteLine(s.BiggestVal());
-      Console.WriteLine(s.GetQuantity("FR"));
+        var leg = nick with { DateOfBirth = new DateOnly(2000,1,1) };
+        Console.WriteLine(leg);
+        Console.WriteLine(leg == nick2 );
+        
+
+        /*  Console.WriteLine("Hello, World!");
+          Action<string, int> D = Test;  // D is a ref. on Test() ,, so u can treat D as a Test like a nickname man :))
+          D("Mousa", 22);
+          Download(ShowProgress);
+          Do(Squared);
+          NamesWithO(WithOs);
+
+          Account a = new Account();
+          List<int> data = new() { 1, 6, 3, 5 };
+         a.Sort(data,l=>l.OrderBy(item=>item).ToList());// (list , operation )
+
+         Func<int, int> triple = x => x * x * x;
+         Func<int,int> doubled = x => x * x;
+         Func<string,string> capitalize = str => str.ToUpper();
+         Console.WriteLine(Doo(triple));
+         Console.WriteLine(Foo(capitalize));*/
+        /*  Stock s = new Stock();
+          s.AddKV("FR",222);
+          s.AddKV("Mousa",900);
+          s.CancelAnItem("AAPL");
+          s.ListItems();
+          s.EditK("Mousa","Ahmad");
+          s.ListItems();
+          s.Search("FR");
+          Console.WriteLine(s.BiggestVal());
+          Console.WriteLine(s.GetQuantity("FR"));*/
     }
 
     static string Foo(Func<string,string> operation)

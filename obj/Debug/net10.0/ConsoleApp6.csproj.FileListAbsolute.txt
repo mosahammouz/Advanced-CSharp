@@ -12,3 +12,4 @@ C:\Users\MousaHammouz\RiderProjects\ConsoleApp6\obj\Debug\net10.0\refint\Console
 C:\Users\MousaHammouz\RiderProjects\ConsoleApp6\obj\Debug\net10.0\ConsoleApp6.pdb
 C:\Users\MousaHammouz\RiderProjects\ConsoleApp6\obj\Debug\net10.0\ConsoleApp6.genruntimeconfig.cache
 C:\Users\MousaHammouz\RiderProjects\ConsoleApp6\obj\Debug\net10.0\ref\ConsoleApp6.dll
+C:\Users\MousaHammouz\RiderProjects\ConsoleApp6\obj\Debug\net10.0\ConsoleApp6.sourcelink.json
